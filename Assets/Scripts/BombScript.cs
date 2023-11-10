@@ -10,7 +10,7 @@ public class BombScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (transform.position.y > yLimit)
+        if (transform.position.y < yLimit)
         {
             Die();
         }

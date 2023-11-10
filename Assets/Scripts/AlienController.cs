@@ -7,20 +7,20 @@ public class AlienController : MonoBehaviour
     public GameObject bombPrefab;
     public float bombSpawnIntervalMin, bombSpawnIntervalMax, bombSpeed;
     private float nextSpawnTime;
-    Transform bombFactory;
+    public Transform bombFactory;
     void Start()
     {
         AlienFactory.incrementAlienCount(1);
-        bombFactory = this.transform.Find("BombFactory");
-        nextSpawnTime = Time.timeSinceLevelLoad;
+        nextSpawnTime = Time.timeSinceLevelLoad + Random.Range(bombSpawnIntervalMin, bombSpawnIntervalMax);
     }
 
     void Update()
     {
         if (Time.timeSinceLevelLoad > nextSpawnTime)
         {
+            print("HERE");
             nextSpawnTime += Random.Range(bombSpawnIntervalMin, bombSpawnIntervalMax);
-            GameObject bomb = Instantiate(bombPrefab, bombFactory);
+            GameObject bomb = Instantiate(bombPrefab, bombFactory.position, bombFactory.rotation);
             bomb.GetComponent<Rigidbody>().velocity = Vector3.down * bombSpeed;
         }
     }

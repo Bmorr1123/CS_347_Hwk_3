@@ -162,6 +162,7 @@ MonoBehaviour:
   bombSpawnIntervalMin: 2
   bombSpawnIntervalMax: 4
   bombSpeed: 4
+  bombFactory: {fileID: 133327476633114670}
 --- !u!65 &2703199489342394618
 BoxCollider:
   m_ObjectHideFlags: 0

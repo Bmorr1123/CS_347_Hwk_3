@@ -140,6 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3de60b63cacfc41946f31f07cdbfd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  yLimit: -15
+  soundGenerator: {fileID: 0}
+  collideSound: {fileID: 0}
 --- !u!54 &8500203599704511504
 Rigidbody:
   m_ObjectHideFlags: 0
