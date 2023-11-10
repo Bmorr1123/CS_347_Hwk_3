@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5464792157193656275}
   m_Layer: 10
   m_Name: Barrier
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,6 +41,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d0131e3e08af6db41ae709a2c812c728, type: 3}
       propertyPath: m_Name
       value: Barricada Concreto
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d0131e3e08af6db41ae709a2c812c728, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0131e3e08af6db41ae709a2c812c728, type: 3}
       propertyPath: m_RootOrder

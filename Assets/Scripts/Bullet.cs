@@ -24,12 +24,13 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Alien")
+        if (other.tag == "Enemy")
         {
             GameObject sg = Instantiate(soundGenerator);
             AudioSource audioSource = sg.GetComponent<AudioSource>();
             audioSource.clip = collideSound;
             audioSource.Play();
+            Die();
         }
     }
 
