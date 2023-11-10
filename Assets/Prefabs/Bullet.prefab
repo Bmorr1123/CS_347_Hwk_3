@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1229659622134446280}
   - component: {fileID: 2057224535216452928}
+  - component: {fileID: -4833718428181037345}
   m_Layer: 7
   m_Name: Bullet
   m_TagString: Untagged
@@ -48,6 +49,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4833718428181037345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229659622134446287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdc7e3dedae80846b303b306cdc6c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yLimit: 15
+  soundGenerator: {fileID: 5558046412324058707, guid: 41c0a56ff2f1493498cf1bd39b124a31, type: 3}
+  collideSound: {fileID: 8300000, guid: 5dab5ddeb4a563e449c07087bebb3956, type: 3}
 --- !u!1 &1229659622385719645
 GameObject:
   m_ObjectHideFlags: 0
